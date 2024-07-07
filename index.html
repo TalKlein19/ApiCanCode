@@ -1,26 +1,899 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.css"/>
-</head>
-<body>
-    <div>
-<input id="urlInput"/>
 
-        <button Id="getUrl">get keys</button>
-        <button Id="getChecked">get values</button>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>API Can Code</title>
+  <meta content="API Can Code is a research project exploring ways to introduce high-school students to the computational foundations of data science" name="description">
+
+  <meta content="API, API Can Code, Data Science, Curricula, Data Science Tools" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="API Can Code logo">
+        <span>API CAN CODE</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">Intro to Data Science</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#resources">Resources</a></li>
+          <li><a class="nav-link scrollto" href="#publications">Publications</a></li>
+          <!--<li><a class="nav-link scrollto" href="/Recruiting.html">Want to take part?</a></li>-->
+          <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Situating Computational Learning Opportunities in the Digital Lives of Students</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">A research project exploring ways to introduce high-school students to the computational foundations of data science</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Learn more</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/newBG.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+            <header class="section-header">
+              <h3>About the Project</h3>
+              <h2>API Can Code is a project aimed to situate data science in the lived experiences of today's students</h2>
+              </header>
+              <p>
+
+                The API Can Code project explores ways to introduce learners to foundational ideas about computer science by having them explore the data that shapes their lives. In particular, the learning experiences will center on application programming interfaces (APIs) for popular platforms and services, allowing students to better understand the digital worlds surrounding them. This approach situates foundational computer science and data science learning in interest-driven contexts that draw on learners’ prior knowledge and is authentic to professional practice. <br/><br/>
+
+                API Can Code is part of a research-practice partnership between the University of Maryland and Washington Leadership Academy. This project will work with students and teachers to design an interest- and data-driven computer science curriculum and iteratively refine and study the curriculum in classrooms over 3 years. This research will contribute to our understanding of the role of interest and data as a means to impact students’ perceptions of computer science and understanding of the impacts of computing and data on their lives. 
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <pre id="result"></pre>
+    </section><!-- End About Section -->
+      
+      <!-- ======= Approach Section ======= -->
 
-    <!-- List to display keys -->
-    <ul id="keyList"></ul>
-    <script src="js/data.js"></script>
+      <section id="approach" class="approach">
 
-      <script src="js/app.js"></script>
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>The API Can Code Curriculum</h2>
+        </header>
+
+                <!-- Feature Tabs -->
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tab">
+                <p>The API Can Code curriculum will include three units (Figure 1) that will introduce students to the computational foundations of data science. 
+                  <p><strong>Unit 1 - "Data in Learners' Lives"</strong> aims to help students better understand the data that surrounds them and how it affects their lives. </p><p><strong>Unit 2 - "Computational Foundations of Data Science"</strong> will help students gain the essential skills to programmatically retrieve and manipulate publicly available data from diverse Application Programming Interfaces (API's), using block-based environments.</p><p> <strong>Unit 3 - "Data Science Practices"</strong> will focus on acquiring skills to analyze and visualize data to extract meaningful insights from them.</p>
+                  <p>Collectively, this three-unit data science curriculum is designed to provide learners with a well-rounded understanding of data science, starting from its foundational concepts and ethical applications, advancing to essential computational skills, and culminating in applying data analysis and visualization techniques to draw meaningful conclusions and effectively communicate their insights. By the end of the curriculum, learners will be equipped with the knowledge and practical skills necessary to tackle real-world data science challenges. </p>
+                  <p>An overview of the API Can Code Curriculum can be found <a href="assets/img/APICC_Curriculum Overview.pdf" target="_blank">here.</a></p>
+                
+
+              </div>
+              <!--<div class="tab-pane fade show active" id="tab">
+                <p>The API Can Code curricular unit (Figure 1) will follow a <strong>Use > Modify > Create</strong> structure (Franklin et al., 2020).</p>
+                <p>In the Use module students will be working with pre-written programs and pre-defined API calls to retrieve data as an introduction to the basics of CS and API programming. Accompanying class discussions will focus on the social impacts of computing and data.</p>
+                <p>The Modify module will challenge students to build upon and modify the provided API calls to expand the area of inquiry, helping students learn how to ask good and answerable data science questions. </p>
+                <p>The Create module will be a multi-week project where students pose their own questions, identify relevant APIs, and generate and analyze their own datasets.</p>
+
+              </div>-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            
+            <img src="assets/img/Curriculum.png" class="img-fluid" alt="">
+              <figcaption>Figure 1 - The API Can Code curricular units, aligning with three emerging technologies.</figcaption>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Approach Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Intro to Data Science</h3>
+          <h2>What is Data Science all about and why does it matter?</h2>
+        </header>
+
+                <!-- Feature Tabs -->
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <h4>Data science is an independent discipline that lives at the intersection of statistics, computer science, and an applied domain</h4>
+
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="tab">
+                <p>Data scientists uses algorithms, computational technologies, and programmed processes to draw insights from data. Datasets are often quite large, and the process of analysis may include cleaning or re-structuring the data.</p>
+                <p>Understanding the role of data in our lives, and having the knowledge and skills to effectively use that data, is essential for all students to be informed citizens and to succeed in an increasingly digital world. This is especially true for those from minoritized groups historically excluded from computing, as these individuals are disproportionately affected by systematic inequities that exist and are being perpetuated through technology. To address the growing importance and impact of data in our world, this project is exploring ways to bring data science into classrooms where all students can learn it.</p>
+
+              </div><!-- End Tab 1 Content -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/datascience_bg2.svg" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- End Feature Tabs -->
+
+        
+          
+    
+
+      </div>
+
+    </section><!-- End Features Section -->
+      
+      
+      
+      
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+          <div class="content">
+        <header class="section-header">
+          
+          <h2>Frequently Asked Questions</h2>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    What is an API?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    API stands for Application Programming Interface. This is a mechanism that enables two software components to communicate with each other using a set of functions and protocols. APIs can be used by data scientists to automatically gather data from a web service or database.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Why is Data Science important?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Data is shaping the way we experience the world in visible and invisible ways. Understanding the role of data in our lives, and having the knowledge and skills to effectively use that data, is essential for all students to be informed citizens and to succeed in an increasingly digital world. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Who should learn Data Science?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Everyone! Given the role that data is playing in shaping our world, it is essential that all students have a foundational understanding of data science. 
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    Who is leading the project?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    <a href="https://go.umd.edu/weintrop" target="_blank">David Weintrop</a> is the Principal Investigator leading the project. Dr. Weintrop is an Associate Professor at the University of Maryland with a joint appointment in the Teaching &amp; Learning, Policy &amp; Leadership</a> department in the College of Education and the College of Information Studies (iSchool).
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Who are the partners of the project?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    This project is a research practice partnership between the University of Maryland and Washington Leadership Academy. By partnering, the project reflects the goals and priorities of both researchers and educators to ensure the result is impactful and reaches the audience it is designed for.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    Are there any resources available for teachers?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    While the API Can Code curriculum is still being developed, teachers and administrators looking for data science curricula should consider the options listed in the Resources section below.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+        </div>
+
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Team</h3>
+          <h2>The Team</h2>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/David.jpg" class="img-fluid" alt="David Weintrop">
+                <div class="social">
+                  <a href="https://www.terpconnect.umd.edu/~weintrop/"><i class="bi bi-globe"></i></a>
+                  <a href="mailto:weintrop@umd.edu"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>David Weintrop</h4>
+                <span>Principal Investigator</span>
+                <p>David Weintrop is an Associate Professor in the Department of Teaching & Learning, Policy & Leadership in the College of Education with a joint appointment in the College of Information Studies at the University of Maryland. His research focuses on the design, implementation, and evaluation of effective, engaging, and equitable computational learning experiences. His work lies at the intersection of design, computer science education, and the learning sciences. David has a Ph.D. in the Learning Sciences from Northwestern University and a B.S. in Computer Science from the University of Michigan.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/RotemIsraelFishelson.jpg" class="img-fluid" alt="Rotem Israel-Fishelson">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/rotem-israel-fishelson/"><i class="bi bi-linkedin"></i></a>
+                  <a href="mailto:rotemisf@umd.edu"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rotem Israel-Fishelson</h4>
+                <span>Postdoctoral Researcher</span>
+                <p>Rotem Israel-Fishelson is a postdoctoral researcher in the Department of Teaching & Learning, Policy & Leadership in the College of Education at the University of Maryland. Her research focuses on exploring ways to introduce learners to data science using engaging computational learning experiences. She is also interested in assessing computational thinking and creativity skills in game-based learning environments using learning analytics methods. Rotem holds a Ph.D. in Science Education from Tel Aviv University, M.Sc. in Media Technology from Linnaeus University, and a B.A in Instructional Design from Holon Institute of Technology.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/Peter.jpg" class="img-fluid" alt="Peter F Moon">
+                <div class="social">
+                  <a href="https://terpconnect.umd.edu/~pmoon/"><i class="bi bi-globe"></i></a>
+                  <a href="mailto: pmoon@umd.edu"><i class="bi bi-envelope"></i></a>
+                  
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Peter F Moon</h4>
+                <span>Doctoral Student</span>
+                <p>Peter Moon is a PhD student in the Center for Math Education at the University of Maryland. His research interests include expressions of algebraic and pre-algebraic thinking, integrating computational thinking into teacher preparation programs, and learning through games; at Maryland, he also works in the NOTICE lab and teaches statistics courses for math teachers. Peter is a Connecticut native with degrees in Psychology from the University of Pennsylvania and Teaching (Secondary Mathematics) from Loyola University Maryland; previously, he taught math and computer science and coached swimming at a high school in Baltimore.</p>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/Xiaoxue.jpg" class="img-fluid" alt="Xiaoxue Zhou">
+                <div class="social">
+                  <a href="mailto: xxzhou@umd.edu"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Xiaoxue Zhou</h4>
+                <span>Doctoral Student</span>
+                <p>Xiaoxue is a Ph.D student in the TLL (Technology, Learning, and Leadership) Program at the University of Maryland. Her research interests include equity issues in K–12 computer science education, data science education, and student achievement assessment. Before starting her doctoral journey in the University of Maryland, she worked as a senior research data analyst at Johns Hopkins University for about four years. She has two master's degrees in Science and a bachelor's degree in Engineering.</p>
+              </div>
+            </div>
+          </div>   
+        </div>
+
+      </div>-->
+        
+<!-- ======= Team Section - 5 columns ======= -->
+<!--
+<div class="container" data-aos="fade-up">
+        <div class="row">
+         <div class="col-md-7">
+             <div class="row">
+              <div class="col-md-4 d-flex align-items-stretch">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="assets/img/team/David.jpg" class="img-fluid" alt="David Weintrop">
+                            <div class="social">
+                            <a href="https://www.terpconnect.umd.edu/~weintrop/"><i class="bi bi-globe"></i></a>
+                            <a href="mailto:weintrop@umd.edu"><i class="bi bi-envelope"></i></a>
+                            </div>
+                    </div>
+                      <div class="member-info">
+                        <h4>David Weintrop</h4>
+                        <span>Principal Investigator</span>
+                        <p>David Weintrop is an Associate Professor in the Department of Teaching & Learning, Policy & Leadership in the College of Education with a joint appointment in the College of Information Studies at the University of Maryland. His research focuses on the design, implementation, and evaluation of effective, engaging, and equitable computational learning experiences. His work lies at the intersection of design, computer science education, and the learning sciences. David has a Ph.D. in the Learning Sciences from Northwestern University and a B.S. in Computer Science from the University of Michigan.</p>
+                      </div>
+                </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/RotemIsraelFishelson.jpg" class="img-fluid" alt="Rotem Israel-Fishelson">
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/rotem-israel-fishelson/"><i class="bi bi-linkedin"></i></a>
+                  <a href="mailto:rotemisf@umd.edu"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rotem Israel-Fishelson</h4>
+                <span>Postdoctoral Researcher</span>
+                <p>Rotem Israel-Fishelson is a postdoctoral researcher in the Department of Teaching & Learning, Policy & Leadership in the College of Education at the University of Maryland. Her research focuses on exploring ways to introduce learners to data science using engaging computational learning experiences. She is also interested in assessing computational thinking and creativity skills in game-based learning environments using learning analytics methods. Rotem holds a Ph.D. in Science Education from Tel Aviv University, M.Sc. in Media Technology from Linnaeus University, and a B.A in Instructional Design from Holon Institute of Technology.</p>
+              </div>
+            </div>                    
+                </div>
+                 <div class="col-md-4 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/Peter.jpg" class="img-fluid" alt="Peter F Moon">
+                <div class="social">
+                  <a href="https://terpconnect.umd.edu/~pmoon/"><i class="bi bi-globe"></i></a>
+                  <a href="mailto: pmoon@umd.edu"><i class="bi bi-envelope"></i></a>
+
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Peter F Moon</h4>
+                <span>Doctoral Student</span>
+                <p>Peter Moon is a PhD student in the Center for Math Education at the University of Maryland. His research interests include expressions of algebraic and pre-algebraic thinking, integrating computational thinking into teacher preparation programs, and learning through games; at Maryland, he also works in the NOTICE lab and teaches statistics courses for math teachers. Peter is a Connecticut native with degrees in Psychology from the University of Pennsylvania and Teaching (Secondary Mathematics) from Loyola University Maryland; previously, he taught math and computer science and coached swimming at a high school in Baltimore.</p>
+              </div>
+            </div>                 
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-5">
+                <div class="row">
+                        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/Daniel.jpg" class="img-fluid" alt="Daniel Pauw">
+                <div class="social">
+                  <a href="mailto: dpauw@umd.edu"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Daniel Pauw</h4>
+                <span>Doctoral Student</span>
+                <p>Daniel Pauw is a PhD student in the College of Information Studies at the University of Maryland. His research interests include helping connect scientific learning to everyday interests of youths and adults. Daniel's work looks at how physical and digital stickers can be used by youth to communicate their interests to other youths and adults through the design of stickers and communities that use stickers. Daniel recently defended his disseration at the University of Maryland - College Park and has previously earned a Masters in Cellular and Molecular Biology at the University of Wisconsin - Madison. <br><br><br></p>
+              </div>
+            </div>                        
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/Xiaoxue.jpg" class="img-fluid" alt="Xiaoxue Zhou">
+                <div class="social">
+                  <a href="mailto: xxzhou@umd.edu"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Xiaoxue Zhou</h4>
+                <span>Doctoral Student</span>
+                <p>Xiaoxue is a Ph.D student in the TLL (Technology, Learning, and Leadership) Program at the University of Maryland. Her research interests include equity issues in K–12 computer science education, data science education, and student achievement assessment. Before starting her doctoral journey in the University of Maryland, she worked as a senior research data analyst at Johns Hopkins University for about four years. She has two master's degrees in Science and a bachelor's degree in Engineering.</p>
+              </div>
+            </div>
+            </div>
+            </div>
+         </div>
+     </div>
+        </div>
+-->
+        
+    </section><!-- End Team Section -->
+    
+    
+    <!-- ======= FormerMembers Section ======= -->
+    <section id="formermembers" class="formermembers">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Former Team Members</h2>
+          
+        </header>
+
+        <div class="row">
+
+          <!--<div class="col-xs-6 col-xs-offset-3">-->
+         <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              
+            </div>
+          </div>
+            <div class="col-lg-2 mt-2 mt-lg-0">
+            <div class="box">
+              <img src="assets/img/team/RachelTabak.jpg" class="img-fluid" alt="">
+              <h3>Rachel Tabak</h3>
+              <h4>Doctoral Student</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-2 mt-2 mt-lg-0">
+            <div class="box">
+              <img src="assets/img/team/DanielP.jpg" class="img-fluid" alt="">
+              <h3>Daniel Pauw</h3>
+              <h4>Doctoral Student</h4>
+            </div>
+          </div>
+           
+            <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              
+            </div>
+          </div>
+
+         
+        </div>
+
+      </div>
+
+    </section><!-- End FormerMembers Section -->
+      
+      <!-- ======= resources Section ======= -->
+      
+    <section id="resources" class="resources">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Resources</h3>
+          <h2>Here are some cool and useful resources</h2>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="resources-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">K-12 Curricula</li>
+              <li data-filter=".filter-card">Tools</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-3 resources-container" data-aos="fade-up" data-aos-delay="200">
+
+           <div class="col-lg-3 col-md-6 resources-item filter-app">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/youcubed.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>YouCubed</h4>
+                <p>YouCubed offers a high school data science curriculum, K-12 lesson plans and comprehensive professional development. Materials introduce data science concepts and support data collection projects led by students.</p>
+                <div class="resources-links">
+                  <a href="https://www.youcubed.org/data-science-lessons/#" title="YouCubed Website" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+             <div class="col-lg-3 col-md-6 resources-item filter-card">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/CODAP.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>CODAP</h4>
+                <p>CODAP is a data analysis platform offered by the Concord Consortium and available for use by teachers and students. </p>
+                <div class="resources-links">
+                  <a href="https://codap.concord.org/app/" title="CODAP" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            
+            <div class="col-lg-3 col-md-6 resources-item filter-app">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/codeHS.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>CodeHS</h4>
+                <p>CodeHS provides curricula for Data Science through our online learning platform. </p>
+                <div class="resources-links">
+                  <a href="https://codehs.com/" title="CodeHS" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 resources-item filter-app">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/Bootstrap.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>Bootstrap</h4>
+                <p>Bootstrap offers a course curriculum, lesson modules and professional development workshops focused on learning the fundamentals of coding and data analysis.</p>
+                <div class="resources-links">
+                  <a href="https://bootstrapworld.org/materials/data-science/" title="Bootstrap Data Science" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 resources-item filter-app">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/ids.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>IDS</h4>
+                <p>The UCLA Introduction to Data Science offers a complete data science curriculum for high school students and several professional development opportunities.</p>
+                <div class="resources-links">
+                  <a href="https://centerx.gseis.ucla.edu/idsucla/" title="IDS Website" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 resources-item filter-card">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/quarum.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>Quorum</h4>
+                <p>The world's first evidence-oriented programming language</p>
+                <div class="resources-links">
+                  <a href="https://quorumlanguage.com/" title="Quorum" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 resources-item filter-card">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/tableau.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>Tableau</h4>
+                <p>Tableau is a leading data visualization tool used for data analysis and business intelligence.</p>
+                <div class="resources-links">
+                  <a href="https://www.tableau.com/" title="Tableau Website" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+            <div class="col-lg-3 col-md-6 resources-item filter-card">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/EduBlocks.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>EduBlocks</h4>
+                <p>EduBlocks is a visual block-based programming tool that helps teachers to introduce text-based programming languages, like Python and HTML.</p>
+                <div class="resources-links">
+                  <a href="https://edublocks.org/" title="EduBlocks Website" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+            <div class="col-lg-3 col-md-6 resources-item filter-card">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/Netsblox.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>NetsBlox</h4>
+                <p>NetsBlox is a visual programming language and cloud-based environment that enables novice programmers to create networked programs.</p>
+                <div class="resources-links">
+                  <a href="https://netsblox.org/" title="NetsBlox Website" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 resources-item filter-web">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/ds4everyone.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>DataScience4Everyone</h4>
+                <p>Data Science for Everyone (DS4E) is a growing coalition of individuals and organizations elevating the importance of data literacy and expanding access to K-12 data science education - for every student.</p>
+                <div class="resources-links">
+                  <a href="https://www.datascience4everyone.org/" title="DataScience4Everyone" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+             <div class="col-lg-3 col-md-6 resources-item filter-card">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/Tuva.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>Tuva</h4>
+                <p>Tuva is a platform that enables students to easily explore, manipulate, and analyze data.</p>
+                <div class="resources-links">
+                  <a href="https://tuvalabs.com/" title="Tuva Website" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          
+          <div class="col-lg-3 col-md-6 resources-item filter-card">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/rapidapi.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>Rapid API</h4>
+                <p>The world's largest API marketplace, used to discover and connect to thousands of APIs.</p>
+                <div class="resources-links">
+                  <a href="https://rapidapi.com/" title="Rapid API" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+          <div class="col-lg-3 col-md-6 resources-item filter-app">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/CourseKata.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>CourseKata</h4>
+                <p>CourseKata Statistics and Data Science is an innovative interactive online textbook for teaching introductory statistics and data science.</p>
+                <div class="resources-links">
+                  <a href="https://coursekata.org/" title="CourseKata Website" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 resources-item filter-card">
+            <div class="resources-wrap">
+              <img src="assets/img/resources/Tools%20comparison.jpg" class="img-fluid" alt="">
+              <div class="resources-info">
+                <h4>K-12 Tools Comparison</h4>
+                <p>Comparison of Data Science Tools For K-12, created by API Can Code team.</p>
+                <div class="resources-links">
+                  <a href="assets/img/resources/Comparison%20of%20Data%20Science%20Tools%20For%20K.pdf" title="Comparison of K-12 Data Science Tools" target="_blank"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+    </section><!-- End resources Section -->
+      
+       <!-- ======= Publiations Section ======= -->
+    <section id="publications" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+            <header class="section-header">
+              <h3>Publications</h3>
+              <h2>Scientific Papers Regarding Our Project</h2>
+              </header>
+              <p>
+                <ul>
+                    <li>Israel-Fishelson, R., Moon, P. F., Pauw, D., & Weintrop, D. (2024). <a href="https://www.terpconnect.umd.edu/~weintrop/papers/Israel-FishelsonEtAl_ISLS_2024.pdf" target="_blank"> Exploring interest-driven data science through participatory design. </a> <i>Proceedings of the 18th International Conference of the Learning Sciences - ICLS 2024 </i> ,1159-1162. International Society of the Learning Sciences.</li>
+                    <br>
+                    
+                    <li>Israel-Fishelson, R., Moon, P. F., & Weintrop, D. (2024). <a href="https://dl.acm.org/doi/pdf/10.1145/3628516.3659416" target="_blank"> Interest-driven data science curriculum for high school students: Empirical evidence from a pilot study. </a> <i>Proceedings of the Symposium on Learning, Design and Technology </i>,908–912. </li>
+                    <br>
+                    
+                    <li>Israel-Fishelson, R., Moon, P. F., Pauw, D., & Weintrop, D. (2024). <a href="https://dl.acm.org/doi/pdf/10.1145/3663433.3663461" target="_blank"> Using participatory design to gain insight into how students make sense of data in their lives. </a> <i>Proceedings of the Symposium on Learning, Design and Technology </i>,85–94.</li>
+                    <br>
+                    
+                    <li>Israel-Fishelson, R., Moon, P. F., Tabak, R., & Weintrop, D. (2024). <a href="https://doi.org/10.1162/99608f92.4f3ac3da" target="_blank">  Understanding the Data in K-12 Data Science. </a> <i>Harvard Data Science Review, 6(2). </i></li>
+                    <br>
+                    
+                    <li>Drozda, Z., Walker, J. T., Fisler, K., & Weintrop, D. (2024)<a href="https://terpconnect.umd.edu/~weintrop/papers/Drozda_et_al_SIGCSE2024.pdf" target="_blank">  Computing in Data Science or Data in Computer Science? Exploring the Relationship between Data Science and Computer Science in K-12 Education. </a> <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 2, 1527–1528.</i></li>
+                    <br>
+                    
+                    <li>Israel-Fishelson, R., Moon, P. F., Tabak, R., & Weintrop, D. (2023). <a href="https://www.terpconnect.umd.edu/~weintrop/papers/Israel-Fishelson_et_al_BIT_2023.pdf" target="_blank">  Preparing students to meet their data: An evaluation of K-12 data science tools. </a> <i>Behaviour & Information Technology. </i></li>
+                    <br>
+                    
+                    <li>Israel-Fishelson, R., Moon, P. F., Tabak, R., & Weintrop, D. (2023). <a href="https://www.terpconnect.umd.edu/~weintrop/papers/Israel-Fishelson_et_al_LDT_2023.pdf" target="_blank"> Preparing K-12 students to meet their data: Analyzing the tools and environments used in introductory data science contexts. </a> <i>Proceedings of the 2023 Symposium on Learning, Design and Technology. </i> Evenston, Illinois, 29-42.    </li>
+                    <br>
+                    
+                    <li>Moon, P. F., Israel-Fishelson, R., Tabak, R., & Weintrop, D. (2023). <a href="https://www.terpconnect.umd.edu/~weintrop/papers/Moon_et_al_IDC_2023.pdf" target="_blank">The tools and datasets being used to introduce youth to data science.</a> <i>Proceedings of the 22nd annual ACM Interaction Design and Children (IDC) Conference. </i> Chicago, Illinois, 150-159.    </li>
+                    <br>
+                    
+                    <li>Israel-Fishelson, R., Moon, P. F., Tabak, R., & Weintrop, D. (2023). What data is in k-12 data science? An analytic approach to understanding the data used in k-12 data science courses. <i>Poster presented at the International Conference for the Learning Sciences – ICLS 2023. </i> Montréal, Canada.
+                    </li>
+
+
+                </ul> 
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Contact Us</h4>
+            <p>Please contact us if there's anything you'd like to discuss</p>
+              <div class="text-center">
+                <a href="mailto:apicancode@umd.edu" class="btn-contact d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Send Message</span>
+                </a>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+        <div class="col-lg-4 col-md-12 footer-info">
+            <!--<a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <span>Sponsors</span>
+            </a>-->
+              <h4>Sponsors</h4>
+              <img src="assets/img/NSF.png" style="width:80px; float: left" alt="NSF logo">
+              <p>This work was made possible through generous support from the National Science Foundation (Award # 2141655). </p>
+              
+          </div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">About the Project</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#features">Intro to Data Science</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#faq">Frequently Asked Questions</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#resources">Resources</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>About us</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#team">Team</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#publications">Publications</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-4 col-md-12 text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Teaching & Learning, Policy & Leadership (TLPL) department <br>
+              The College of Education<br><br>
+              <img src="assets/img/UMDlogo.png" style="height:50px;" alt="University of Maryland logo">
+              <br><br>
+              <strong>Email:</strong> apicancode@umd.edu<br>
+            </p>
+          </div>
+         
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>API Can Code 2023</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
